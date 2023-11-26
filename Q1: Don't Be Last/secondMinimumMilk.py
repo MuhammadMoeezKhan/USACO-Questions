@@ -1,5 +1,5 @@
 #Question Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=687
-#Run Command: python3 notLast.py < notlast.in > notlast.out
+#Run Command: python3 secondMinimumMilk < notlast.in > notlast.out
 
 from collections import defaultdict
 
@@ -32,7 +32,7 @@ def findSecondMinMilkAmount(numCows):
     else:
         return winnerCow
     
-
+#write result to output file
 def writeToOutputFile():
     numCows = int(input())
     with open("notlast.out", "w") as outputFile:
